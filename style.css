@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #007BFF;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px 0;
+  background-color: #eee;
+}
+
+nav a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #0056b3;
+}
+
+.shop-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.phone-card {
+  background-color: white;
+  width: 220px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.2s;
+}
+
+.phone-card:hover {
+  transform: scale(1.05);
+}
+
+.phone-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.phone-card h3 {
+  margin: 10px 0 5px 0;
+  font-size: 1.1rem;
+}
+
+.phone-card p {
+  margin: 0;
+  color: #555;
+}
+
+.buy-btn {
+  margin-top: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.buy-btn:hover {
+  background-color: #1e7e34;
+}
+
+@media (max-width: 700px) {
+  .shop-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
